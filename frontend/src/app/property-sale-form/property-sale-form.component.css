@@ -1,0 +1,11 @@
+mat-card {
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+mat-form-field{
+  background-color: aliceblue;
+}
+
+

@@ -1,0 +1,171 @@
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 16px;
+}
+
+.property-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.property-price span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.example-button-container button {
+  background-color: #000000; /* Default color */
+  transition: background-color 0.3s ease;
+}
+
+.example-button-container button.liked {
+  background-color: #f44336; /* Color when liked */
+}
+
+.example-button-container button:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+.property-details span {
+  display: block;
+  margin-bottom: 4px;
+  color: #777;
+}
+/* app.component.css */
+.property-list {
+  display: flexbox;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+.grid-container {
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: auto auto auto;
+  background-color: #fcfcfc;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+ 
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+.grid-item i{
+  padding: 5px;
+}
+
+
+.center-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  margin: 1%;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 50px; /* Semi-circular corners */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.nav-button.active {
+  background-color: #3f51b5;
+  color: white;
+}
+
+mat-form-field {
+  width: 50%;
+  margin: 10px;
+}
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.image-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* This ensures the images maintain aspect ratio and cover the entire area */
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: rgb(46, 46, 46);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  background-color: white;
+  color: #5f2dc4;
+}
+
+.example-button-container button.liked {
+  background-color: red;
+}
+
+/* Styles for the image grid */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -6px;
+}
+
+.image-item {
+  padding: 6px;
+  box-sizing: border-box;
+  flex: 1 1 calc(35% - 12px); /* 4 columns layout with padding */
+}
+
+.image-box {
+  border: 1px solid #ccc;
+}
+
+.image-box:hover {
+  border: 1px solid #777;
+}
+
+.image-box img {
+  width: 100%;
+  height: 500px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  display: block;
+}
+
+
+
+

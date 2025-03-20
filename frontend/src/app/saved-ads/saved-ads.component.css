@@ -1,0 +1,142 @@
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 16px;
+}
+
+.property-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.property-price span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.property-details span {
+  display: block;
+  margin-bottom: 4px;
+  color: #777;
+}
+/* app.component.css */
+.property-list {
+  display: flexbox;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+.grid-container {
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: auto auto auto;
+  background-color: #fcfcfc;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+ 
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+.grid-item i{
+  padding: 5px;
+}
+
+
+.center-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(155, 201, 253);
+  margin: 1%;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.nav-button.active {
+  background-color: #3f51b5;
+  color: white;
+}
+
+mat-form-field {
+  width: 50%;
+  margin: 10px;
+}
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  background-color: white;
+  color: #5f2dc4;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between images as needed */
+}
+
+.image-item {
+  flex: 1 1 calc(33.333% - 10px); /* Three images per row, adjust as needed */
+  box-sizing: border-box;
+}
+
+.image-box {
+  border: 1px solid #ccc; /* Border style for each image box */
+  padding: 10px; /* Padding inside the image box */
+  text-align: center; /* Center align content */
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-caption {
+  margin-top: 5px;
+}

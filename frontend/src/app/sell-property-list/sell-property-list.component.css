@@ -1,0 +1,156 @@
+/* General property card styling */
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 16px;
+}
+
+.property-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.property-price span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.property-details span {
+  display: block;
+  margin-bottom: 4px;
+  color: #777;
+}
+
+.example-button-container button {
+  background-color: #000000; /* Default color */
+  transition: background-color 0.3s ease;
+}
+
+.example-button-container button.liked {
+  background-color: #f44336; /* Color when liked */
+}
+
+.example-button-container button:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+
+/* Grid container and item styles */
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  background-color: #fcfcfc;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.grid-item i {
+  padding: 5px;
+}
+.grid-items img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Navigation styles */
+.center-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  margin: 1%;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 50px; /* Semi-circular corners */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.nav-button.active {
+  background-color: #3f51b5;
+  color: white;
+}
+
+/* Image grid styles */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Gap between images */
+}
+
+.image-item {
+  flex: 1 1 calc(33.333% - 10px); /* Three images per row */
+  box-sizing: border-box;
+}
+
+.image-box {
+  padding: 10px;
+  text-align: center; /* Center content */
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-caption {
+  margin-top: 5px;
+}
+
+/* Mat button and menu styles */
+button.mat-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: grey; /* Sets the text and icon color to grey */
+}
+
+button.mat-button i {
+  margin-right: 8px; /* Spacing between icon and text */
+}
+
+.mat-menu-item {
+  color: grey; /* Sets the text and icon color to grey */
+}
+
+.mat-menu-item i {
+  margin-right: 8px; /* Spacing between icon and text */
+}
