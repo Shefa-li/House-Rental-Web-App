@@ -12,7 +12,7 @@
 ### 📌 Backend Setup (Spring Boot)
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/Shefalidesai/Rental-App.git
+   git clone https://github.com/Shefa-li/House-Rental-Web-App.git
    cd Rental-App/backend
    ```
 2. **Set up the database (MySQL)**
@@ -48,10 +48,4 @@
 4. **Access the application:**  
    Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-## 📖 API Documentation
-View API endpoints & responses in **Swagger UI**:  
-🔗 [Swagger UI](http://localhost:8080/swagger-ui/)
 
-
-## 📝 License
-This project is licensed under **MIT License** - see [LICENSE](LICENSE) for details.
